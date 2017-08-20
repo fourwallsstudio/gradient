@@ -16,10 +16,20 @@ module.exports = {
           presets: ['es2015', 'react'],
         }
       }
-    ]
+    ],
   },
   devtool: 'source-map',
   resolve: {
     extensions: ['.js', '.jsx', '*']
+  },
+  plugins: {
+    uglify: {
+      mangle: false,
+      compress: {
+        global_defs: {
+          DEBUG: false
+        }
+      }
+    }
   }
 };
