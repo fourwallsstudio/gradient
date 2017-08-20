@@ -17,7 +17,7 @@ module Gradient
 
     config.paperclip_defaults = {
       :storage => :s3,
-      :s3_region => ENV["s3_region"],
+      :region => ENV["s3_region"],
       :s3_credentials => {
         :s3_protocol => 'https',
         :bucket => ENV["s3_bucket"],
