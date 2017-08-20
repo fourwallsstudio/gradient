@@ -12230,8 +12230,6 @@ document.addEventListener('DOMContentLoaded', function () {
 
   var store = (0, _store2.default)();
 
-  window.getState = store.getState;
-
   var root = document.getElementById('root');
   _reactDom2.default.render(_react2.default.createElement(_root2.default, { store: store }), root);
 });
@@ -25811,8 +25809,6 @@ var Display = function (_React$Component) {
   }, {
     key: 'handleClick',
     value: function handleClick() {
-      console.log(this.state);
-
       this.setState({
         gradientModalActive: !this.state.gradientModalActive
       });
@@ -25820,8 +25816,6 @@ var Display = function (_React$Component) {
   }, {
     key: 'disableModal',
     value: function disableModal() {
-      console.log("disableModal");
-
       this.setState({
         gradientModalActive: false
       });
@@ -43955,8 +43949,6 @@ var GradientModal = function (_React$Component) {
       var copy = document.getElementById('g-modal-copy');
 
       window.onclick = function (event) {
-        console.log("target", event.target);
-
         if (event.target !== modal && event.target !== copy && event.target !== gradient) {
 
           _this2.props.disableModal();
@@ -44495,7 +44487,7 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
 var configureStore = function configureStore() {
   var preloadedState = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : {};
 
-  return (0, _redux.createStore)(_root_reducer2.default, preloadedState, (0, _redux.applyMiddleware)(_reduxThunk2.default, _reduxLogger2.default));
+  return (0, _redux.createStore)(_root_reducer2.default, preloadedState, (0, _redux.applyMiddleware)(_reduxThunk2.default));
 };
 
 exports.default = configureStore;

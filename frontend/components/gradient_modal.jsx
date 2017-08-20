@@ -8,10 +8,7 @@ class GradientModal extends React.Component {
     const modal = document.getElementById('g-modal-text')
     const copy = document.getElementById('g-modal-copy')
 
-
     window.onclick = (event) => {
-      console.log("target", event.target)
-
       if (event.target !== modal
         && event.target !== copy
         && event.target !== gradient) {

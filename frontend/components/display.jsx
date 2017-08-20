@@ -26,16 +26,12 @@ class Display extends React.Component {
   }
 
   handleClick() {
-    console.log(this.state)
-
     this.setState({
       gradientModalActive: !this.state.gradientModalActive
     })
   }
 
   disableModal() {
-    console.log("disableModal")
-
     this.setState({
       gradientModalActive: false
     })
