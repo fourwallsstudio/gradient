@@ -13,7 +13,7 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "webpack": "webpack --watch",
-    "postinstall": "brunch build -p && webpack"
+    "postinstall": "webpack"
   },
   "repository": {
     "type": "git",
@@ -42,9 +42,5 @@
     "redux-logger": "^3.0.6",
     "redux-thunk": "^2.2.0",
     "webpack": "^3.5.5"
-  },
-  "devDependencies": {
-    "brunch": "^2.10.10",
-    "uglify-js-brunch": "^2.10.0"
   }
 }

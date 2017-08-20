@@ -21,15 +21,5 @@ module.exports = {
   devtool: 'source-map',
   resolve: {
     extensions: ['.js', '.jsx', '*']
-  },
-  plugins: {
-    uglify: {
-      mangle: false,
-      compress: {
-        global_defs: {
-          DEBUG: false
-        }
-      }
-    }
   }
 };
