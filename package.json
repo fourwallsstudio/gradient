@@ -6,9 +6,14 @@
   "directories": {
     "test": "test"
   },
+  "engines": {
+    "node": "7.10.0",
+    "npm": "4.2.0"
+  },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "webpack": "webpack --watch"
+    "webpack": "webpack --watch",
+    "postinstall": "webpack"
   },
   "repository": {
     "type": "git",
