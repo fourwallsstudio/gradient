@@ -91,8 +91,6 @@ Rails.application.configure do
       s3_region: ENV["s3_region"],
       s3_host_name: ENV["s3_host_name"],
       url: ENV["url"],
-      endpoint: ENV["endpoint"],
-      force_path_style: true
     }
   }
 
