@@ -4,4 +4,4 @@
 
 [heroku]: https://gradientapp.herokuapp.com/
 
-![image of home](docs/screenshots/home.png)
+![image of home](doc/screenshots/home.png)
