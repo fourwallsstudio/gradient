@@ -37,6 +37,7 @@ gem 'paperclip-meta'
 gem 'aws-sdk'
 gem 'figaro'
 gem 'rb-readline'
+gem 'newrelic_rpm'
 
 # Use Capistrano for deployment
 # gem 'capistrano-rails', group: :development
