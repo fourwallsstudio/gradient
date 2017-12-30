@@ -1,4 +1,4 @@
-var path = require('path');
+const path = require('path');
 
 module.exports = {
   entry: './frontend/gradient.jsx',
@@ -18,7 +18,6 @@ module.exports = {
       }
     ],
   },
-  devtool: 'source-map',
   resolve: {
     extensions: ['.js', '.jsx', '*']
   }

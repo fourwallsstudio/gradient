@@ -12,8 +12,8 @@
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "webpack": "webpack --watch",
-    "postinstall": "webpack"
+    "webpack": "webpack --config webpack.dev.js --watch",
+    "postinstall": "webpack --config webpack.prod.js"
   },
   "repository": {
     "type": "git",
@@ -41,6 +41,8 @@
     "redux": "^3.7.2",
     "redux-logger": "^3.0.6",
     "redux-thunk": "^2.2.0",
-    "webpack": "^3.5.5"
+    "uglifyjs-webpack-plugin": "^1.1.5",
+    "webpack": "^3.5.5",
+    "webpack-merge": "^4.1.1"
   }
 }
